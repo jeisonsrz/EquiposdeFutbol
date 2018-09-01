@@ -90,3 +90,28 @@ estadio.innerHTML=dataEquipos[this.selectedIndex].estadio;
 estrellitas.innerHTML=dataEquipos[this.selectedIndex].estrellitas;
 
 }
+
+var recorrer = function(item){
+  console.log(item.dt);
+}
+
+function recorrer2 (item){
+  console.log(item.estadio);
+}
+
+//dataEquipos.forEach(recorrer);
+//dataEquipos.forEach(recorrer2);
+console.log(dataEquipos);
+
+dataEquipos.push({
+  estrellitas: "🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟",
+  nombre: "Popayan",
+    urlimage: "imagenes/logoPopayan.jpg",
+    dt: "Pastusito DT",
+    juegadores: ["Paston","Pastusin","Pastico","Pastisal","Pastote"],
+    reseña: "El americano",
+    estadio: "Estadio Departamental Libertad",
+    estrellas: "imagenes/ePasto.png",
+ });
+
+ 
