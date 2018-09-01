@@ -7,7 +7,7 @@ var dataEquipos=[
     dt: "Almidon Nacional",
     juegadores: ["matias","carebata","panseroti","carroLoco","yucaFrita"],
     reseña: "El ",
-    estadio: "Estadio Atanasio Girardot",
+    estadio: "imagenes/estadioNacional.jpg",
     estrellas: "imagenes/eNacional.png",
   },
   {
@@ -78,6 +78,7 @@ var estadio=document.getElementById("estadio");
 var estrellas=document.getElementById("estrellasEquipo");
 var estrellitas=document.getElementById("estrellitas");
 
+
 selEquipos.onchange = function ()
 {
  //document.getElementById("nombre").innerHTML = this.value;
@@ -88,6 +89,7 @@ dt.innerHTML=dataEquipos[this.selectedIndex].dt;
 jugadores.innerHTML=dataEquipos[this.selectedIndex].juegadores;
 estadio.innerHTML=dataEquipos[this.selectedIndex].estadio;
 estrellitas.innerHTML=dataEquipos[this.selectedIndex].estrellitas;
+document.body.style.backgroundColor= dataEquipos[this.selectedIndex].estadio;
 
 }
 

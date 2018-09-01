@@ -1,0 +1,23 @@
+body{
+	margin:0 auto;
+	font-family: "Helvetica Neue", "raleway";
+	font-size: 14px;
+	background-image: url("imagenes/fondoEquipos.jpg");
+}
+
+.titulo{
+	height: 100%;
+	width: 1000px;
+	margin: 10px;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.contenido{
+	height: 100%;
+	width: 1000px;
+	margin: 10px;
+	color: #ffffff;
+	font-size: 20px;
+}
+
