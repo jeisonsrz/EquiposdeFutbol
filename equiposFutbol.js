@@ -7,8 +7,11 @@ var dataEquipos=[
     dt: "Almidon Nacional",
     juegadores: ["matias","carebata","panseroti","carroLoco","yucaFrita"],
     reseña: "El ",
-    estadio: "imagenes/estadioNacional.jpg",
+    //estadio: "url('imagenes/estadioNacional.jpg')",
+    estadioimg: "imagenes/estadioNacional.jpg",
+    estadio: "Estadio Atanasio Girardot",
     estrellas: "imagenes/eNacional.png",
+    categoria: "Categoria A",
   },
   {
     estrellitas: "🌟🌟🌟",
@@ -17,8 +20,10 @@ var dataEquipos=[
     dt: "Americanito DT",
     juegadores: ["Caballon","Arepudo","Salchipapa","Mazamorra","Rosconsito"],
     reseña: "El americano",
+    estadioimg: "imagenes/estadioAmerica.jpg",
     estadio: "Estadio Pascual Guerrero",
     estrellas: "imagenes/eAmerica.png",
+    categoria: "Categoria B",
   },
   {
     estrellitas: "🌟",
@@ -27,8 +32,10 @@ var dataEquipos=[
     dt: "Millonariesito DT",
     juegadores: ["Millonariesito1","Millonariesito2","Millonariesito3","Millonariesito4","Millonariesito5"],
     reseña: "El americano",
+    estadioimg: "imagenes/estadioMillonarios.jpg",
     estadio: "Estadio El Campín",
     estrellas: "imagenes/eMillonarios.png",
+    categoria: "Categoria A"
   },
   {
     estrellitas: "🌟🌟🌟🌟🌟🌟🌟🌟",
@@ -37,8 +44,10 @@ var dataEquipos=[
     dt: "Tolimita DT",
     juegadores: ["Tolimon","Tolimudo","Tolinsote","Totoludo","Tokimon"],
     reseña: "El americano",
+    estadioimg: "imagenes/estadioTolima.jpg",
     estadio: "Estadio Manuel Murillo Toro",
     estrellas: "imagenes/eTolima.png",
+    categoria: "Categoria B",
   }
   ,
   {
@@ -49,7 +58,9 @@ var dataEquipos=[
     juegadores: ["Medellino","Medilludo","Medillunsote","Medillinito","Medillonote"],
     reseña: "El americano",
     estadio: "El medillinsito Estadio Atanasio Girardot",
+    estadioimg: "imagenes/estadioMedellin.jpg",
     estrellas: "imagenes/eMedellin.png",
+    categoria: "Categoria A"
   }
   ,
   {
@@ -60,13 +71,13 @@ var dataEquipos=[
     juegadores: ["Paston","Pastusin","Pastico","Pastisal","Pastote"],
     reseña: "El americano",
     estadio: "Estadio Departamental Libertad",
+    estadioimg: "imagenes/estadioPasto.jpg",
     estrellas: "imagenes/ePasto.png",
+    categoria: "Categoria B",
   }
 
 
-
 ]
-
 
 var selEquipos = document.getElementById("equipos");
 var nomEquipo = document.getElementById("nombre");
@@ -77,7 +88,7 @@ var jugadores=document.getElementById("jugadores");
 var estadio=document.getElementById("estadio");
 var estrellas=document.getElementById("estrellasEquipo");
 var estrellitas=document.getElementById("estrellitas");
-
+var estadioFondo=document.getElementById("imgEstadio");
 
 selEquipos.onchange = function ()
 {
@@ -89,8 +100,8 @@ dt.innerHTML=dataEquipos[this.selectedIndex].dt;
 jugadores.innerHTML=dataEquipos[this.selectedIndex].juegadores;
 estadio.innerHTML=dataEquipos[this.selectedIndex].estadio;
 estrellitas.innerHTML=dataEquipos[this.selectedIndex].estrellitas;
-document.body.style.backgroundColor= dataEquipos[this.selectedIndex].estadio;
-
+//document.body.style.backgroundImage = dataEquipos[this.selectedIndex].estadio;
+estadioFondo.setAttribute("src",dataEquipos[this.selectedIndex].estadioimg);
 }
 
 var recorrer = function(item){
@@ -116,4 +127,3 @@ dataEquipos.push({
     estrellas: "imagenes/ePasto.png",
  });
 
- 

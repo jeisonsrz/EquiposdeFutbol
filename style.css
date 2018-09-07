@@ -7,17 +7,71 @@ body{
 
 .titulo{
 	height: 100%;
-	width: 1000px;
-	margin: 10px;
+	margin-top: 80px;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.titulo2{
+	height: 100%;
+	margin-top: 0px;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.titulo3{
+	height: 100%;
+	margin-top: 0px;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.botNuevoE{
+	height: 100%;
+	margin-top: 0px;
+	color: #000000;
+	font-size: 20px;
+
+}
+.izquierda{
+	height: 100%;
+	width: 500px;
+	margin: 30px;
 	color: #ffffff;
 	font-size: 20px;
 }
 
 .contenido{
 	height: 100%;
-	width: 1000px;
+	width: 500px;
 	margin: 10px;
 	color: #ffffff;
 	font-size: 20px;
+}
+
+.derecha{
+
+	color: #ffffff;
+	font-size: 20px;
+	
+}
+
+.select1{
+	height: 100%;
+	width: 300px;
+	margin: 10px;
+	color: #0f0f0f;
+	font-size: 20px;
+}
+
+.tablacategorias{
+	
+
+	
+	margin: 20px;
+	color: #ffffff;
+	font-size: 20px;
+	border: blue 5px solid;
+	padding: 15px;
 }
 
