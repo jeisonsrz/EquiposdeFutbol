@@ -19,8 +19,8 @@
         <a class="navbar-brand" href="fpc.html">Liga Aguila</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="fpc.html">Inicio</a></li>
-        <li><a href="categoriasFutbol.html">Categorias</a></li>
+        <li ><a href="fpc.html">Inicio</a></li>
+        <li class="active"><a href="categoriasFutbol.html">Categorias</a></li>
         <li><a href="sort.html">Tabla de posiciones</a></li>
       </ul>
     </div>
@@ -93,23 +93,45 @@
        <div class="modal-content3">
           <div class="modal-header">
          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-             <h3>Creacion de un nuevo equipo de futbol</h3>
+             <h3>Creación de un nuevo equipo de futbol</h3>
       </div>
           <div class="modal-body">
            
             <div class="titulo3">
               <h3 class="H3"> ⚽⛹ Nuevo Equipo </h3>
-              <form id="formulario">
+              <form id="formulario" >
+
+                  <label for="letra"  class="titulo3" id="texto"  >Nombre Equipo</label>
                   
                   <input type='text' id='letra' autocomplete="off" class='form-control'   placeholder="Escribe un nombre para el equipo"/>
-                  <label for="letra"  class="titulo3" id="texto"  >Nombre Equipo</label>
-                  <input type='text' id='estrellasF' autocomplete="off" class='form-control' placeholder="Escribe las estrellas del equipo" />
+                  
                   <label for="estrellasF"  class="titulo3" id="texto2">Estrellas</label>
+
+                  <input type='number' id='estrellasF' autocomplete="off" class='form-control'   placeholder="Escribe la cantidad de estrellas"/>
+                  
+                  <label for="estrellasF"  class="titulo3" id="texto3">Imagen Escudo Equipo</label>
+
+                  <input type="file" id='urlimageF'  class='form-control'/>
+
+                  <label for="estrellasF"  class="titulo3" id="texto3">Director Técnico</label>
+
+                  <input type='text' id='dtF' autocomplete="off" class='form-control'   placeholder="Escribe el nombre del DT"/>
+                 
+                  <label for="estrellasF"  class="titulo3" id="texto3">Jugadores</label>
+
+                  <input type='text' id='jugadoresF' autocomplete="off" class='form-control'   placeholder="Escribe los nombres de los jugadores"/>
+                 
+                  <label for="estrellasF"  class="titulo3" id="texto3">Imagen Estadio del Equipo</label>
+
+                  <input type="file" id='estadioF'  class='form-control'/>
+
+                  <label for="estrellasF"  class="titulo3" id="texto3">Categoria Equipo</label>
+
+                  <br><br>
+
 
                   <input type='submit' id='btn' class='btn btn-primary'value='Crear Equipo'/>
                   
-
-
 
                 </form>
                          

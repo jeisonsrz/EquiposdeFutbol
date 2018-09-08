@@ -98,9 +98,8 @@ body{
 form{
 
 	height: 100%;
-	width: 160px;
-	
-	
+	width: 300px;
+
 }
 
 .modal-content3{
@@ -117,4 +116,8 @@ form{
 }
 .H3{
 	text-align: center;
+}
+
+.form-control{
+	align-content: center;
 }

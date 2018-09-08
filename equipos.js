@@ -2,6 +2,17 @@ var cateFutbol=document.getElementById("categoriasObjeto");
 var btn = document.getElementById('btn');
 var form = document.getElementById("formulario");
 var botonc = document.getElementById('crearEqui');
+var fEstrellas = document.getElementById("estrellasF");
+var fNombre = document.getElementById("letra");
+var fUrlimage = document.getElementById("urlimageF");
+var fDt = document.getElementById("dtF");
+var fJugadores = document.getElementById("jugadoresF");
+var fEstadioimg = document.getElementById("estadioF");
+var fCategoria = document.getElementById("categoriaF");
+
+
+
+var nEstrellas= "";
 
 class EquipodeFutbol{
 
@@ -92,7 +103,28 @@ function myFunction() {
 
 form.addEventListener('submit',function(e){
     e.preventDefault();
-    equiposObjetos.push(new EquipodeFutbol("🌟","AAAAA","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
     
 
+        dEstrella=parseInt(fEstrellas.value);
+
+        for(var i=0;i<dEstrella;i++)
+        {
+            if(i==0)
+            {
+                nEstrellas= "";
+            }
+           nEstrellas= "🌟" + nEstrellas;
+         
+           
+        }
+
+
+        equiposObjetos.push(new EquipodeFutbol(nEstrellas,fNombre.value,fUrlimage.value,fDt.value,fJugadores.value,"Reseñaa","Estadio Departamental Libertad",fEstadioimg.value,"Categoria B"));
+ 
+
+
+   
+
 });
+
+   
