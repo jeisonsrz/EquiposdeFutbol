@@ -1,6 +1,7 @@
 var cateFutbol=document.getElementById("categoriasObjeto");
 var btn = document.getElementById('btn');
 var form = document.getElementById("formulario");
+var botonc = document.getElementById('crearEqui');
 
 class EquipodeFutbol{
 
@@ -80,10 +81,18 @@ selCategoria.onchange = function ()
  
 }
 
+function myFunction() {
+    $(document).ready(function()
+    {
+       $("#mostrarmodal").modal("show");
+    })
+}
+    
+
 
 form.addEventListener('submit',function(e){
     e.preventDefault();
     equiposObjetos.push(new EquipodeFutbol("🌟","AAAAA","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
-
+    
 
 });
