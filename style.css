@@ -122,3 +122,19 @@ form{
 .form-control{
 	align-content: center;
 }
+
+.tablapos{
+	margin-top: 30px;
+}
+
+.tab1{
+	background-color: #009688;
+	height: 70px;
+	
+}
+
+.tab2{
+	background-color:  #e551f8;
+	height: 100%;
+	width: 100%;
+}
