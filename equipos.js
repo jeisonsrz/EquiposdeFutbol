@@ -49,6 +49,12 @@ equiposObjetos.push(new EquipodeFutbol("🌟🌟🌟🌟🌟🌟🌟🌟","Tolim
 equiposObjetos.push(new EquipodeFutbol("🌟🌟🌟🌟","Medellin","imagenes/logoMedellin.png","Medellinsito DT",["Medellino","Medilludo","Medillunsote","Medillinito","Medillonote"],"El americano","El medillinsito Estadio Atanasio Girardot","imagenes/estadioMedellin.jpg","Categoria A"));
 equiposObjetos.push(new EquipodeFutbol("🌟🌟","Pasto","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
 
+equiposObjetos.push(new EquipodeFutbol("🌟🌟🌟🌟🌟","Cali","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
+equiposObjetos.push(new EquipodeFutbol("🌟🌟🌟","Junior","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
+equiposObjetos.push(new EquipodeFutbol("🌟🌟🌟🌟🌟","Equidad","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
+equiposObjetos.push(new EquipodeFutbol("🌟","Once Caldas","imagenes/logoPasto.png","Pastusito DT",["Paston","Pastusin","Pastico","Pastisal","Pastote"],"El americano","Estadio Departamental Libertad","imagenes/estadioPasto.jpg","Categoria B"));
+
+
 
 var selCategoria = document.getElementById("equiposCategoria");
 
@@ -119,12 +125,6 @@ form.addEventListener('submit',function(e){
         }
 
 
-        equiposObjetos.push(new EquipodeFutbol(nEstrellas,fNombre.value,fUrlimage.value,fDt.value,fJugadores.value,"Reseñaa","Estadio Departamental Libertad",fEstadioimg.value,"Categoria B"));
- 
-
-
-   
-
+        equiposObjetos.push(new EquipodeFutbol(nEstrellas,fNombre.value,fUrlimage.value,fDt.value,fJugadores.value,"Reseñaa","Estadio Departamental Libertad",fEstadioimg.value,"Categoria B")); 
 });
 
-   
